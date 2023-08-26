@@ -7,25 +7,25 @@ const rootRoute = new RootRoute({
 
 const homeRoute = new Route({
   getParentRoute: () => rootRoute,
-  path: "./",
+  path: "/",
   component: Home,
 });
 
 const ourCompanyRoute = new Route({
   getParentRoute: () => rootRoute,
-  path: "./ourCompany",
+  path: "/ourCompany",
   component: OurCompany,
 });
 
 const locationsRoute = new Route({
   getParentRoute: () => rootRoute,
-  path: "./locations",
+  path: "/locations",
   component: locations,
 });
 
 const ContactRoute = new Route({
   getParentRoute: () => rootRoute,
-  path: "./Contact",
+  path: "/Contact",
   component: Contact,
 });
 // Create the route tree using your routes

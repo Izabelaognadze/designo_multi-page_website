@@ -1,10 +1,10 @@
-import { Link } from "@tanstack/react-router";
-
+import { Header } from "../../components/layout";
 const Home = () => {
-    return
+  return (
     <div className="">
-        <Link to="/./ourCompany">Home</Link>
+      <Header />
     </div>
-}
+  );
+};
 
 export default Home;

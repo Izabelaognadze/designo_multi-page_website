@@ -1,5 +1,9 @@
 # Designo multi-page website - React + TypeScript + Vite
 
+![Design preview for the Designo Agency Website Challenge coding challenge](./assets/preview.jpg)
+
+Welcome! 👋
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -36,16 +40,12 @@ My users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL here]()
-- Live Site URL: [live URL here]()
+- Solution URL: [solution URL here](https://github.com/Izabelaognadze/designo_multi-page_website)
+- Live Site URL: [live URL here](https://izabelaognadze.github.io/designo_multi-page_website/)
 
 ### Start the app
 
 In the project directory, you can run:
-
-```shell
-npm inpm run watch
-```
 
 ## My process
 
@@ -79,8 +79,6 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-
 
 If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
