@@ -13,7 +13,7 @@ export default {
         "clrBlackLight": "#333136",
         "clrGrey": "#F1F3F5",
         "clrWhite": "#FFFFFF",
-      }
+      },
     },
   },
   plugins: [],

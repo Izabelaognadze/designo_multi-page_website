@@ -1,19 +1,19 @@
 # Designo multi-page website - React + TypeScript + Vite
 
-![Design preview for the Designo Agency Website Challenge coding challenge](./assets/preview.jpg)
+![Design preview for the Designo Agency Website Challenge coding challenge](./src/assets/preview.jpg)
 
 Welcome! 👋
 
 ## Table of contents
 
 - [Overview](#overview)
-  
+
   - [The challenge](#the-challenge)
   - [Links](#links)
   - [Start the app](#Start-the-app)
 
 - [My process](#my-process)
-  
+
   - [Built with](#built-with)
 
 - [Author](#author)
