@@ -1,4 +1,4 @@
-import { Header, ButtonDark, TalkAbout, Footer } from "../../components/layout";
+import { Header, TalkAbout, Footer } from "../../components/layout";
 
 const Locations = () => {
   return (

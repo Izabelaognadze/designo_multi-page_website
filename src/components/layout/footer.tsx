@@ -5,11 +5,13 @@ export const Footer = () => {
     <div className=" bg-clrBlackDark">
       <div className="max-w-[1111px] md:pb-20 lg:pb-[72px] pt-[253px] md:pt-[144px] mx-auto">
         <div className="flex flex-col md:flex-row md:justify-between">
-          <img
-            className="w-[202px] h-[27px] mx-auto md:mx-0 md:ml-[5px]"
-            src={LogoDark}
-            alt=""
-          />
+          <Link to="/">
+            <img
+              className="w-[202px] h-[27px] mx-auto md:mx-0 md:ml-[5px]"
+              src={LogoDark}
+              alt=""
+            />
+          </Link>
           <hr className="h-[2px] md:hidden bg-white opacity-10 my-8 mx-6" />
           <div className="flex flex-col md:flex-row uppercase text-white text-sm leading-[14px] tracking-widest gap-y-8 mb-10 text-center md:gap-x-[42px]">
             <Link to="/ourCompany" className="hover:underline">
