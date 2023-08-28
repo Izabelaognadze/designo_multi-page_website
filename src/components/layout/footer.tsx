@@ -3,7 +3,7 @@ import LogoDark from "../../assets/shared/desktop/logo-light.png";
 export const Footer = () => {
   return (
     <div className=" bg-clrBlackDark">
-      <div className="max-w-[1111px] md:pb-20 lg:pb-[72px] pt-[253px] md:pt-[166px] mx-auto">
+      <div className="max-w-[1111px] md:pb-20 lg:pb-[72px] pt-[253px] md:pt-[144px] mx-auto">
         <div className="flex flex-col md:flex-row md:justify-between">
           <img
             className="w-[202px] h-[27px] mx-auto md:mx-0 md:ml-[5px]"
@@ -12,20 +12,26 @@ export const Footer = () => {
           />
           <hr className="h-[2px] md:hidden bg-white opacity-10 my-8 mx-6" />
           <div className="flex flex-col md:flex-row uppercase text-white text-sm leading-[14px] tracking-widest gap-y-8 mb-10 text-center md:gap-x-[42px]">
-            <Link to="/ourCompany">Our Company</Link>
-            <Link to="/locations">Locations</Link>
-            <Link to="/Contact">Contact</Link>
+            <Link to="/ourCompany" className="hover:underline">
+              Our Company
+            </Link>
+            <Link to="/locations" className="hover:underline">
+              Locations
+            </Link>
+            <Link to="/Contact" className="hover:underline">
+              Contact
+            </Link>
           </div>
         </div>
-        <hr className="hidden md:block h-[2px] opacity-10 mx-auto" />
+        <hr className="hidden md:block h-[1px] opacity-10 mx-auto mt-[13px]" />
         <div className="flex flex-col md:flex-row items-center md:justify-between md:items-end">
-          <div className="flex flex-col items-end md:flex-row text-clrWhite font-normal opacity-50 space-y-10 leading-[26px] text-center md:text-start">
-            <div className="w-[223px] md:gap-[10px] lg:w-[350px] lg:gap-[30px]">
+          <div className="flex flex-col items-end md:flex-row text-clrWhite font-normal opacity-50 mt-[31px] text-center md:text-start">
+            <div className="w-[223px] md:gap-[10px] lg:w-[350px] lg:gap-[30px] te">
               <p className="font-bold">Designo Central Office</p>
               <p>3886 Wellington Street</p>
               <p>Toronto, Ontario M9C 3J5</p>
             </div>
-            <div className="w-[223px]">
+            <div className="w-[223px]  md:gap-[10px] lg:w-[350px] lg:gap-[30px]">
               <p className="font-bold">Contact Us (Central Office)</p>
               <p>P : +1 253-863-8967</p>
               <p>M : contact@designo.co</p>

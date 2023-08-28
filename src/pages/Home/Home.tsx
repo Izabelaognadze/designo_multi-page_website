@@ -1,10 +1,16 @@
-import { Header, Footer } from "../../components/layout";
+import {
+  Header,
+  Footer,
+  TalkAbout,
+  DesignSection,
+} from "../../components/layout";
 const Home = () => {
   return (
     <div className="">
-      <div className="mb-80">
-        <Header />
-      </div>
+      <Header />
+      <div className="bg-red-500 text-2xl text-white">this is Home page</div>
+      <DesignSection />
+      <TalkAbout />
       <Footer />
     </div>
   );

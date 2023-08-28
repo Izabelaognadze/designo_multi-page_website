@@ -10,16 +10,22 @@ export const Header = () => {
   };
   return (
     <div className="max-w-[689px] md:max-w-[1111px] mx-auto">
-      <div className="flex flex-row justify-between md:mt-[64px] mx-6 md:mx-10 lg:mx-0 my-9">
+      <div className="flex flex-row justify-between md:mt-[64px] md:mx-10 lg:mx-0 my-9">
         <div className="w-[202px]">
           <Link to="/">
             <img src={logoLight} alt="" />
           </Link>
         </div>
         <div className="hidden md:flex gap-[42px] h-[14px] tracking-[2px] text-sm leading-[14px] uppercase my-auto text-clrBlackLight">
-          <Link to="/ourCompany">Our Company</Link>
-          <Link to="/locations">Locations</Link>
-          <Link to="/Contact">Contact</Link>
+          <Link to="/ourCompany" className="hover:underline">
+            Our Company
+          </Link>
+          <Link to="/locations" className="hover:underline">
+            Locations
+          </Link>
+          <Link to="/Contact" className="hover:underline">
+            Contact
+          </Link>
         </div>
         <div className="md:hidden cursor-pointer" onClick={updateMenu}>
           <svg
@@ -53,8 +59,9 @@ export const Header = () => {
       </div>
       <div
         id="menu-elements"
-        className="absolute min-w-full md:hidden flex-col bg-clrBlackDark text-white px-6 py-[48px] tracking-[2px] uppercase text-2xl space-y-5"
-        style={{ display: toggle ? "flex" : "none" }}
+        className={` md:hidden flex-col bg-clrBlackDark text-white px-6 py-[48px] tracking-[2px] uppercase text-2xl space-y-5 ${
+          toggle ? "flex" : "hidden"
+        }`}
       >
         <Link to="/ourCompany">Our Company</Link>
         <Link to="/locations">Locations</Link>

@@ -1,4 +1,4 @@
-# Designo multi-page website - React + TypeScript + Vite
+# Designo multi-page website - React + TypeScript + Vite + Tailwind CSS
 
 ![Design preview for the Designo Agency Website Challenge coding challenge](./src/assets/preview.jpg)
 
@@ -46,6 +46,20 @@ My users should be able to:
 ### Start the app
 
 In the project directory, you can run:
+
+```shell
+# 👇️ if you use npm
+npm install
+npm install vite
+
+npm run dev
+
+# 👇️ if you use yarn
+yarn install
+yarn add vite
+
+yarn dev
+```
 
 ## My process
 
