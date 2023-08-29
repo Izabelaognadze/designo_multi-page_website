@@ -1,4 +1,7 @@
-export { default as Home } from "./Home";
-export { default as OurCompany } from "./our-company";
-export { default as locations } from "./locations";
-export { default as Contact } from "./Contact";
+export { Home } from "./Home";
+export { OurCompany } from "./our-company";
+export { Locations } from "./locations";
+export { Contact } from "./Contact";
+export { AppDesign } from "./Design/app-design"
+export { WebDesign } from "./Design/web-design"
+export {GraphicDesign } from "./Design/graphic-design"

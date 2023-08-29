@@ -3,17 +3,18 @@ import {
   Footer,
   TalkAbout,
   DesignSection,
+  CompanyDesctiptions,
+  HomeDesigns,
 } from "../../components/layout";
-const Home = () => {
+export const Home = () => {
   return (
     <div className="">
       <Header />
-      <div className="bg-red-500 text-2xl text-white">this is Home page</div>
       <DesignSection />
+      <HomeDesigns />
+      <CompanyDesctiptions />
       <TalkAbout />
       <Footer />
     </div>
   );
 };
-
-export default Home;

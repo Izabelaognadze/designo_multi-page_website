@@ -1,6 +1,6 @@
 import { Header, TalkAbout, Footer } from "../../components/layout";
 
-const Locations = () => {
+export const Locations = () => {
   return (
     <div className="">
       <Header />
@@ -12,4 +12,3 @@ const Locations = () => {
     </div>
   );
 };
-export default Locations;

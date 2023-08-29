@@ -1,11 +1,9 @@
 import { Header, Footer, TalkAbout } from "../../components/layout";
-export const OurCompany = () => {
+export const WebDesign = () => {
   return (
     <div className="">
       <Header />
-      <div className="bg-red-500 text-2xl text-white">
-        this is our company <section></section>
-      </div>
+      <div className="bg-green-500">this is web design</div>
       <TalkAbout />
       <Footer />
     </div>

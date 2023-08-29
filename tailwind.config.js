@@ -14,9 +14,6 @@ export default {
         "clrGrey": "#F1F3F5",
         "clrWhite": "#FFFFFF",
       },
-      backgroundImage:{
-        "talk-about":"url(./ass)"
-      }
     },
   },
   plugins: [],

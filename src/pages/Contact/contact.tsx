@@ -1,5 +1,5 @@
 import { Header, Footer, TalkAbout } from "../../components/layout";
-const Contact = () => {
+export const Contact = () => {
   return (
     <div className="">
       <body>
@@ -13,5 +13,3 @@ const Contact = () => {
     </div>
   );
 };
-
-export default Contact;
