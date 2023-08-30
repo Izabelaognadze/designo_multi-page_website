@@ -9,9 +9,11 @@ import CanadaLogo from "../../assets/shared/Canada.svg";
 import AustraliaLogo from "../../assets/shared/Australia.svg";
 import UnitedKingdomLogo from "../../assets/shared/United-Kingdom.svg";
 // import aboutImg from "../../assets/about/image-about-hero.jpg";
+import RealMob from "../../assets/about/mob-image-real-deal.png";
+import AboutMob from "../../assets/about/mob-image-about-hero.png";
+import AboutDesk from "../../assets/about/desk-image-about-hero.jpg";
 import RealDesk from "../../assets/about/desk-image-real-deal.jpg";
 import TalentMob from "../../assets/about/mob-image-world-class-talent.png";
-import TalentTab from "../../assets/about/tab-image-world-class-talent.png";
 import talentDesk from "../../assets/about/desk-image-world-class-talent.jpg";
 export const OurCompany = () => {
   return (
@@ -19,8 +21,24 @@ export const OurCompany = () => {
       <Header />
       <div className="flex justify-center">
         <AboutMainContent
+          img_mob={AboutMob}
+          paragraphCol="text-white"
+          headerCol="text-white"
+          bg_col=" bg-clrPinkDark "
+          display="lg:flex-row-reverse"
+          img_des={AboutDesk}
+          header="About Us"
+          paragraph="Founded in 2010, we are a creative agency that produces lasting results for our clients. We've partnered with many startups, corporations, and nonprofits alike to craft designs that make real impact. We’re always looking forward to creating brands, products, and digital experiences that connect with our clients’ audiences."
+          secParagraph=""
+        />
+      </div>
+      <div className="flex justify-center">
+        <AboutMainContent
           img_mob={TalentMob}
-          img_tab={TalentMob}
+          paragraphCol="text-clrBlackDark"
+          headerCol="text-clrPinkDark"
+          bg_col="bg-clrWhiteDark"
+          display="lg:flex-row"
           img_des={talentDesk}
           header="World-class talent"
           paragraph="We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully crafted from concept to launch, ensuring success in its given market. We are constantly updating our skills in a myriad of platforms."
@@ -35,11 +53,14 @@ export const OurCompany = () => {
         <Locations logo={UnitedKingdomLogo} header="United Kingdom" />
       </div>
 
-      <div className="mx-auto">
+      <div className="flex justify-center">
         <AboutMainContent
-          img_mob={TalentMob}
-          img_tab={TalentTab}
+          img_mob={RealMob}
+          paragraphCol="text-clrBlackDark"
+          headerCol="text-clrPinkDark"
           img_des={RealDesk}
+          bg_col="bg-clrWhiteDark"
+          display="lg:flex-row-reverse"
           header="The real deal"
           paragraph="As strategic partners in our clients' businesses, we are ready to take on any challenge as our own.
           Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every opportunity. We make design and technology more accessible and give you tools to measure success."

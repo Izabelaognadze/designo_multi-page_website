@@ -89,36 +89,52 @@ export const Locations = ({ logo, header }: LocationsProps) => {
 
 interface AboutMainContentProps {
   img_mob: string;
-  img_tab: string;
   img_des: string;
   header: string;
+  bg_col: string;
+  display: string;
   paragraph: string;
+  headerCol: string;
+  paragraphCol: string;
   secParagraph: string;
 }
 
 export const AboutMainContent = ({
   img_mob,
-  img_tab,
   img_des,
   header,
+  display,
+  bg_col,
   paragraph,
+  headerCol,
+  paragraphCol,
   secParagraph,
 }: AboutMainContentProps) => {
   return (
-    <div className="flex flex-col lg:flex-row-reverse mx-10 max-w-[1111px]">
+    <div
+      className={`flex flex-col mx-10 rounded-[15px] max-w-[1111px] ${display}`}
+      style={{ borderRadius: "15px" }}
+    >
       <div className="lg:w-[34%]">
-        <img className="block md:hidden" src={img_mob} alt="" />
-        <img className="hidden md:block lg:hidden" src={img_tab} alt="" />
-        <img className="hidden md:hidden lg:block" src={img_des} alt="" />
+        <img className="block lg:hidden" src={img_mob} alt="" />
+        <img className="hidden lg:block" src={img_des} alt="" />
       </div>
-      <div className="bg-clrWhiteDark text-center space-y-6 lg:w-[66%] max-w-[689px]">
-        <h3 className="mt-[68px] text-clrPinkDark text-[40px] leading-[48px] font-medium">
+      <div
+        className={`${bg_col} text-center space-y-6 lg:w-[66%] max-w-[689px] flex justify-center flex-col`}
+      >
+        <h3
+          className={`mt-[68px] ${headerCol} text-[40px] leading-[48px] font-medium`}
+        >
           {header}
         </h3>
-        <p className="font-normal leading-[26px] text-base text-clrBlackDark">
+        <p
+          className={`font-normal leading-[26px] text-base ${paragraphCol} px-[59px]`}
+        >
           {paragraph}
         </p>
-        <p className="font-normal leading-[26px] text-base text-clrBlackDark">
+        <p
+          className={`font-normal leading-[26px] text-base ${paragraphCol} px-[59px]`}
+        >
           {secParagraph}
         </p>
       </div>
