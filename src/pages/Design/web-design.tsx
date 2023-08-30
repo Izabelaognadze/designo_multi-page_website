@@ -32,7 +32,7 @@ export const WebDesign = () => {
         and bring memorable brand experiences."
       />
 
-      <div className="mt-[97px] space-y-10">
+      <div className="mt-[97px] space-y-10 lg:space-y-0 lg:gap-y-10 mx-auto max-w-[1111px] flex flex-col items-center lg:grid  lg:grid-cols-3">
         <DesignMainContent
           logo={ExpressLogo}
           header="EXPRESS"

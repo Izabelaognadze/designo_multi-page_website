@@ -54,19 +54,17 @@ export const DesignMainContent = ({
   label,
 }: CompanyDesctiptionProps) => {
   return (
-    <div className="mx-auto max-w-[1111px]">
-      <div className="grid grid-flow-rows md:grid-flow-col md:grid-cols-none lg:grid-flow-row grid-cols-4 rounded-[15px] mx-6 md:mx-[39px] lg:mx-[165px] group-hover:hover:text-white bg-clrPinkLight hover:bg-clrPinkDark hover:text-white ">
-        <img
-          className="max-w-[380px] rounded-t-[15px] md:rounded-l-[15px] md:rounded-r-none lg:rounded-b-none lg:rounded-t-[15px]"
-          src={logo}
-          alt=""
-        />
-        <div className="max-w-[380px] flex flex-col md:grow px-5  py-8 md:my-auto space-y-4">
-          <p className="text-xl text-center font-medium">{header}</p>
-          <p className="max-w-[270px] mx-auto text-base font-normal text-center">
-            {label}
-          </p>
-        </div>
+    <div className="flex flex-col md:flex-row lg:flex-col cursor-pointer rounded-2xl">
+      <div className="max-w-xs rounded-2xl">
+        <img src={logo} alt="" />
+      </div>
+      <div className="bg-clrWhiteDark text-center hover:bg-clrPinkDark group max-w-xs flex flex-col justify-center rounded-b-[14px] md:rounded-r-[15px]">
+        <h1 className="text-clrPinkDark group-hover:text-white font-medium text-xl leading-[26px] tracking-[5px] mb-4 mt-5">
+          {header}
+        </h1>
+        <p className="group-hover:text-white text-clrBlackDark font-normal text-base leading-[26px] pb-8">
+          {label}
+        </p>
       </div>
     </div>
   );
@@ -90,31 +88,39 @@ export const Locations = ({ logo, header }: LocationsProps) => {
 };
 
 interface AboutMainContentProps {
-  bg_img: string;
+  img_mob: string;
+  img_tab: string;
+  img_des: string;
   header: string;
   paragraph: string;
   secParagraph: string;
 }
 
 export const AboutMainContent = ({
-  bg_img,
+  img_mob,
+  img_tab,
+  img_des,
   header,
   paragraph,
   secParagraph,
 }: AboutMainContentProps) => {
   return (
-    <div className="max-w-[1111px] bg-clrWhiteDark">
-      <img src={bg_img} alt="" />
-      <div className="mt-20 text-center mx-6 pb-[105px]">
-        <div className="mb-5 font-medium text-4xl text-clrPinkDark">
+    <div className="flex flex-col lg:flex-row-reverse mx-10 max-w-[1111px]">
+      <div className="lg:w-[34%]">
+        <img className="block md:hidden" src={img_mob} alt="" />
+        <img className="hidden md:block lg:hidden" src={img_tab} alt="" />
+        <img className="hidden md:hidden lg:block" src={img_des} alt="" />
+      </div>
+      <div className="bg-clrWhiteDark text-center space-y-6 lg:w-[66%] max-w-[689px]">
+        <h3 className="mt-[68px] text-clrPinkDark text-[40px] leading-[48px] font-medium">
           {header}
-        </div>
-        <div className="mb-6 text-clrBlackLight text-[15px] font-normal ">
+        </h3>
+        <p className="font-normal leading-[26px] text-base text-clrBlackDark">
           {paragraph}
-        </div>
-        <div className="text-clrBlackLight text-[15px] font-normal">
+        </p>
+        <p className="font-normal leading-[26px] text-base text-clrBlackDark">
           {secParagraph}
-        </div>
+        </p>
       </div>
     </div>
   );

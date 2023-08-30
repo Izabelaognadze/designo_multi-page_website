@@ -27,7 +27,7 @@ export const GraphicDesign = () => {
         label="Graphic Design"
         paragraph="We deliver eye-catching branding materials that are tailored to meet your business objectives."
       />
-      <div className="mt-[97px] space-y-10">
+      <div className="mt-[97px] space-y-10 lg:space-y-0 lg:gap-y-10 mx-auto max-w-[1111px] flex flex-col items-center lg:grid  lg:grid-cols-3">
         <DesignMainContent
           logo={changeLogo}
           header="TIM BROWN"
@@ -35,12 +35,12 @@ export const GraphicDesign = () => {
         />
         <DesignMainContent
           logo={BoxedWaterLogo}
-          header="TIM BROWN"
+          header="BOXED WATER"
           label="A simple packaging concept made for Boxed Water"
         />
         <DesignMainContent
           logo={ScienceLogo}
-          header="TIM BROWN"
+          header="SCIENCE!"
           label="A poster made in collaboration with the Federal Art Project"
         />
       </div>

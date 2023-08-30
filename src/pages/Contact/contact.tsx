@@ -7,7 +7,7 @@ export const Contact = () => {
     <div className="">
       <body>
         <Header />
-        <div className="flex flex-col lg:flex-row space-y-12 lg:items-start lg:my-[60px]">
+        <div className="flex flex-col lg:flex-row space-y-12 lg:items-start lg:my-[60px] max-w-[1111px] mx-auto">
           {/* samoci px shesacvlelia */}
           <Locations logo={CanadaLogo} header="Canada" />
           <Locations logo={AustraliaLogo} header="Australia" />
