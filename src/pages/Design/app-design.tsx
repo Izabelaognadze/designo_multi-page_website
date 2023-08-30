@@ -1,9 +1,50 @@
-import { Header, Footer, TalkAbout } from "../../components/layout";
+import AirfilterLogo from "../../assets/app-design/desktop/image-airfilter.jpg";
+import eyecamLogo from "../../assets/app-design/desktop/image-eyecam.jpg";
+import faceitLogo from "../../assets/app-design/desktop/image-faceit.jpg";
+import todoLogo from "../../assets/app-design/desktop/image-todo.jpg";
+import loopstudiosLogo from "../../assets/app-design/desktop/image-loopstudios.jpg";
+import {
+  Header,
+  Footer,
+  TalkAbout,
+  DesignHeader,
+  DesignMainContent,
+} from "../../components/layout";
 export const AppDesign = () => {
   return (
     <div className="">
       <Header />
-      <div className="bg-blue-500">this is app design</div>
+      <DesignHeader
+        label="App Design"
+        paragraph="Our mobile designs bring intuitive digital solutions to your customers right at their fingertips."
+      />
+      <div className="mt-[97px] space-y-10">
+        <DesignMainContent
+          logo={AirfilterLogo}
+          header="AIRFILTER"
+          label="Solving the problem of poor indoor air quality by filtering the air"
+        />
+        <DesignMainContent
+          logo={eyecamLogo}
+          header="EYECAM"
+          label="Product that lets you edit your favorite photos and videos at any time"
+        />
+        <DesignMainContent
+          logo={faceitLogo}
+          header="FACEIT"
+          label="Get to meet your favorite internet superstar with the faceit app"
+        />
+        <DesignMainContent
+          logo={todoLogo}
+          header="TODO"
+          label="A todo app that features cloud sync with light and dark mode"
+        />
+        <DesignMainContent
+          logo={loopstudiosLogo}
+          header="LOOPSTUDIOS"
+          label="A VR experience app made for Loopstudios"
+        />
+      </div>
       <TalkAbout />
       <Footer />
     </div>
