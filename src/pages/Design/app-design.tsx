@@ -3,13 +3,25 @@ import eyecamLogo from "../../assets/app-design/desktop/image-eyecam.jpg";
 import faceitLogo from "../../assets/app-design/desktop/image-faceit.jpg";
 import todoLogo from "../../assets/app-design/desktop/image-todo.jpg";
 import loopstudiosLogo from "../../assets/app-design/desktop/image-loopstudios.jpg";
+
+import WebMobileDesignlarge from "../../assets/home/mobile/image-web-design.jpg";
+import GraphicMobileDesignlarge from "../../assets/home/mobile/image-graphic-design.jpg";
+
+import WebTabletDesignlarge from "../../assets/home/tablet/image-web-design.jpg";
+import GraphicTabletDesignlarge from "../../assets/home/tablet/image-graphic-design.jpg";
+
+import WebdesktopDesignSmall from "../../assets/home/desktop/image-web-design-small.jpg";
+import GraphicDesktopDesign from "../../assets/home/desktop/image-graphic-design.jpg";
+
 import {
   Header,
   Footer,
   TalkAbout,
   DesignHeader,
   DesignMainContent,
+  HomeDesign,
 } from "../../components/layout";
+import { Link } from "@tanstack/react-router";
 export const AppDesign = () => {
   return (
     <div className="">
@@ -44,6 +56,24 @@ export const AppDesign = () => {
           header="LOOPSTUDIOS"
           label="A VR experience app made for Loopstudios"
         />
+      </div>
+      <div className="text-white uppercase flex flex-col lg:flex-row gap-6 lg:gap-[30px] max-w-[1111px] mx-auto mt-[96px] md:mt-[120px] lg:mt-40">
+        <Link to="/webDesign">
+          <HomeDesign
+            bgMobile={WebMobileDesignlarge}
+            bgTab={WebTabletDesignlarge}
+            bgDesk={WebdesktopDesignSmall}
+            header="WEB DESIGN"
+          />
+        </Link>
+        <Link to="/graphicDesign">
+          <HomeDesign
+            bgMobile={GraphicMobileDesignlarge}
+            bgTab={GraphicTabletDesignlarge}
+            bgDesk={GraphicDesktopDesign}
+            header="GRAPHIC DESIGN"
+          />
+        </Link>
       </div>
       <TalkAbout />
       <Footer />

@@ -1,13 +1,24 @@
 import changeLogo from "../../assets/graphic-design/desktop/image-change.jpg";
 import BoxedWaterLogo from "../../assets/graphic-design/desktop/image-boxed-water.jpg";
 import ScienceLogo from "../../assets/graphic-design/desktop/image-science.jpg";
+
+import WebMobileDesignlarge from "../../assets/home/mobile/image-web-design.jpg";
+import AppMobileDesignlarge from "../../assets/home/mobile/image-app-design.jpg";
+
+import WebTabletDesignlarge from "../../assets/home/tablet/image-web-design.jpg";
+import AppTabletDesignlarge from "../../assets/home/tablet/image-app-design.jpg";
+
+import WebdesktopDesignSmall from "../../assets/home/desktop/image-web-design-small.jpg";
+import AppDesktopDesign from "../../assets/home/desktop/image-app-design.jpg";
 import {
   Header,
   Footer,
   TalkAbout,
   DesignHeader,
   DesignMainContent,
+  HomeDesign,
 } from "../../components/layout";
+import { Link } from "@tanstack/react-router";
 export const GraphicDesign = () => {
   return (
     <div className="">
@@ -32,6 +43,24 @@ export const GraphicDesign = () => {
           header="TIM BROWN"
           label="A poster made in collaboration with the Federal Art Project"
         />
+      </div>
+      <div className="text-white uppercase flex flex-col lg:flex-row gap-6 lg:gap-[30px] max-w-[1111px] mx-auto mt-[96px] md:mt-[120px] lg:mt-400">
+        <Link to="/appDesign">
+          <HomeDesign
+            bgMobile={AppMobileDesignlarge}
+            bgTab={AppTabletDesignlarge}
+            bgDesk={AppDesktopDesign}
+            header="APP DESIGN"
+          />
+        </Link>
+        <Link to="/webDesign">
+          <HomeDesign
+            bgMobile={WebMobileDesignlarge}
+            bgTab={WebTabletDesignlarge}
+            bgDesk={WebdesktopDesignSmall}
+            header="WEB DESIGN"
+          />
+        </Link>
       </div>
       <TalkAbout />
       <Footer />

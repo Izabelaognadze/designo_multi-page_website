@@ -13,12 +13,18 @@ export const CompanyDesctiption = ({
 }: CompanyDesctiptionProps) => {
   return (
     <div className="flex flex-col md:flex-row lg:flex-col mx-6 md:mx-[39px] max-w-[1111px] lg:mx-auto">
-      <img className="w-[202px] h-[202px] mx-auto" src={logo} alt="" />
-      <div className="flex flex-col text-clrBlackLight text-center md:text-start lg:text-center md:my-auto">
+      <img
+        className="w-[202px] h-[202px] mx-auto md:mr-12 lg:mx-auto"
+        src={logo}
+        alt=""
+      />
+      <div className="flex flex-col text-clrBlackLight text-center md:text-start lg:text-center md:my-auto mt-12">
         <h4 className="text-[20px] tracking-[5px] leading-[20px] font-medium">
           {header}
         </h4>
-        <p className="leading-[26px] font-normal text-base mt-8">{label}</p>
+        <p className="leading-[26px] font-normal text-base mt-8 max-w-lg mx-auto md:max-w-none">
+          {label}
+        </p>
       </div>
     </div>
   );
@@ -113,5 +119,61 @@ export const AboutMainContent = ({
     </div>
   );
 };
+interface HomeDesignsProps {
+  bgMobile: string;
+  bgTab: string;
+  bgDesk: string;
+  header: String;
+}
 
-// export const Design = ({logo, header})
+export const HomeDesign = ({
+  bgMobile,
+  bgTab,
+  bgDesk,
+  header,
+}: HomeDesignsProps) => {
+  return (
+    <div className="bg-clrPinkDark relative max-w-fit max-h-fit rounded-2xl mx-auto">
+      <img
+        className="hover:opacity-25 rounded-2xl md:hidden"
+        src={bgMobile}
+        alt=""
+      />
+      <img
+        className="hover:opacity-25 rounded-2xl hidden md:block lg:hidden"
+        src={bgTab}
+        alt=""
+      />
+      <img
+        className="hover:opacity-25 rounded-2xl hidden lg:block"
+        src={bgDesk}
+        alt=""
+      />
+      <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <h1 className="text-[40px] font-medium leading-10 tracking-[2px] truncate">
+          {header}
+        </h1>
+        <div className="flex flex-row mt-3 md:mt-6 ">
+          <p className="text-[15px] font-medium leading-[5px] uppercase">
+            VIEW PROJECTS
+          </p>
+          <div className="flex justify-start ml-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="5"
+              height="10"
+              viewBox="0 0 5 10"
+              fill="none"
+            >
+              <path
+                d="M1 1.13477L5 5.13477L1 9.13477"
+                stroke="#E7816B"
+                stroke-width="2"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
