@@ -11,10 +11,10 @@ export const TalkAbout = () => {
       }}
     >
       <div className="flex flex-col text-center mx-6 md:mx-[95px]">
-        <div className="text-[32px] md:text-[40px] font-medium leading-9 md:leading-10 lg:max-w-[280px] lg:text-start">
+        <div className="text-[32px] md:text-[40px] font-medium leading-9 md:leading-10 lg:max-w-[280px] lg:text-start mb-2">
           Let&apos;s talk about your project
         </div>
-        <div className="text-[15px] font-normal leading-[25px] mt-[6px] max-w-md md:text-start mx-auto">
+        <div className="text-[15px] font-normal leading-[25px] mt-[6px] max-w-md mx-auto my-8 md:text-center lg:text-start">
           Ready to take it to the next level? Contact us today and find out how
           our expertise can help your business grow.
         </div>

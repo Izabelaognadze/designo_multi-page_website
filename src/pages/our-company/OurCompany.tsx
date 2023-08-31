@@ -8,7 +8,6 @@ import {
 import CanadaLogo from "../../assets/shared/Canada.svg";
 import AustraliaLogo from "../../assets/shared/Australia.svg";
 import UnitedKingdomLogo from "../../assets/shared/United-Kingdom.svg";
-// import aboutImg from "../../assets/about/image-about-hero.jpg";
 import RealMob from "../../assets/about/mob-image-real-deal.png";
 import AboutMob from "../../assets/about/mob-image-about-hero.png";
 import AboutDesk from "../../assets/about/desk-image-about-hero.jpg";
@@ -19,7 +18,7 @@ export const OurCompany = () => {
   return (
     <div className="">
       <Header />
-      <div className="flex justify-center">
+      <div className="flex justify-center mb-0 md:mb-[120px] lg:mb-40">
         <AboutMainContent
           img_mob={AboutMob}
           paragraphCol="text-white"
@@ -53,7 +52,7 @@ export const OurCompany = () => {
         <Locations logo={UnitedKingdomLogo} header="United Kingdom" />
       </div>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-[120px] lg:mt-40">
         <AboutMainContent
           img_mob={RealMob}
           paragraphCol="text-clrBlackDark"

@@ -54,11 +54,11 @@ export const DesignMainContent = ({
   label,
 }: CompanyDesctiptionProps) => {
   return (
-    <div className="flex flex-col md:flex-row lg:flex-col cursor-pointer rounded-2xl">
-      <div className="max-w-xs rounded-2xl">
+    <div className="flex flex-col md:flex-row lg:flex-col cursor-pointer  rounded-[15px] overflow-hidden group">
+      <div className="max-w-xs group-hover:bg-clrPinkDark">
         <img src={logo} alt="" />
       </div>
-      <div className="bg-clrWhiteDark text-center hover:bg-clrPinkDark group max-w-xs flex flex-col justify-center rounded-b-[14px] md:rounded-r-[15px]">
+      <div className="bg-clrWhiteDark text-center group-hover:bg-clrPinkDark group max-w-xs flex flex-col justify-center ">
         <h1 className="text-clrPinkDark group-hover:text-white font-medium text-xl leading-[26px] tracking-[5px] mb-4 mt-5">
           {header}
         </h1>
@@ -98,7 +98,7 @@ interface AboutMainContentProps {
   paragraphCol: string;
   secParagraph: string;
 }
-
+import AboutBgImg from "../assets/about/bg-pattern-hero-about-desktop.svg";
 export const AboutMainContent = ({
   img_mob,
   img_des,
@@ -112,29 +112,29 @@ export const AboutMainContent = ({
 }: AboutMainContentProps) => {
   return (
     <div
-      className={`flex flex-col mx-10 rounded-[15px] max-w-[1111px] ${display}`}
-      style={{ borderRadius: "15px" }}
+      className={`flex flex-col mx-10 max-w-[1111px] ${display} rounded-[15px] overflow-hidden`}
     >
-      <div className="lg:w-[34%]">
+      <div className="lg:w-[38%]">
         <img className="block lg:hidden" src={img_mob} alt="" />
         <img className="hidden lg:block" src={img_des} alt="" />
       </div>
       <div
-        className={`${bg_col} text-center space-y-6 lg:w-[66%] max-w-[689px] flex justify-center flex-col`}
+        style={{
+          backgroundImage: `url(${AboutBgImg})`,
+          backgroundRepeat: "repeat",
+          backgroundSize: "350px 350px",
+        }}
+        className={`${bg_col} text-center px-[59px] lg:text-start space-y-6 lg:w-[62%] max-w-[689px] flex justify-center flex-col pb-16 `}
       >
         <h3
           className={`mt-[68px] ${headerCol} text-[40px] leading-[48px] font-medium`}
         >
           {header}
         </h3>
-        <p
-          className={`font-normal leading-[26px] text-base ${paragraphCol} px-[59px]`}
-        >
+        <p className={`font-normal leading-[26px] text-base ${paragraphCol}`}>
           {paragraph}
         </p>
-        <p
-          className={`font-normal leading-[26px] text-base ${paragraphCol} px-[59px]`}
-        >
+        <p className={`font-normal leading-[26px] text-base ${paragraphCol}`}>
           {secParagraph}
         </p>
       </div>
@@ -195,6 +195,50 @@ export const HomeDesign = ({
             </svg>
           </div>
         </div>
+      </div>
+    </div>
+  );
+};
+interface LocationsMapProps {
+  header: string;
+  label1: string;
+  label2: string;
+  paragraph1: string;
+  paragraph2: string;
+  paragraph3: string;
+  paragraph4: string;
+}
+
+export const LocationsMap = ({
+  header,
+  label1,
+  label2,
+  paragraph1,
+  paragraph2,
+  paragraph3,
+  paragraph4,
+}: LocationsMapProps) => {
+  return (
+    <div
+      className="flex flex-col md:rounded-[15px] text-center justify-center font-normal space-y-6 bg-clrWhiteDark md:max-w-[689px] lg:max-w-none mx-auto w-full md:w-auto md:px-[25%] lg:px-[23%]"
+      style={{
+        backgroundImage: `url(${AboutBgImg})`,
+        backgroundRepeat: "repeat",
+        backgroundSize: "350px 350px",
+      }}
+    >
+      <h3 className="text-clrPinkDark font-medium text-4xl leading-9">
+        {header}
+      </h3>
+      <div className="flex flex-col">
+        <p className="font-medium">{label1}</p>
+        <p className="">{paragraph1}</p>
+        <p className="">{paragraph2}</p>
+      </div>
+      <div className="flex flex-col">
+        <p className="">{label2}</p>
+        <p className="">{paragraph3}</p>
+        <p className="">{paragraph4}</p>
       </div>
     </div>
   );
