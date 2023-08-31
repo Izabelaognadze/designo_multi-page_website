@@ -2,6 +2,7 @@ import {
   Outlet,
   RootRoute,
   Route,
+  createHashHistory,
   Router,
   RouterProvider,
 } from "@tanstack/react-router";
@@ -14,6 +15,8 @@ import {
   WebDesign,
   GraphicDesign,
 } from "./pages";
+
+const hashHistory = createHashHistory();
 
 const rootRoute = new RootRoute({
   component: Root,
@@ -69,7 +72,7 @@ const routeTree = rootRoute.addChildren([
 ]);
 
 // Create the router using your route tree
-const router = new Router({ routeTree });
+const router = new Router({ routeTree, history: hashHistory });
 
 // Register your router for maximum type safety
 declare module "@tanstack/react-router" {
