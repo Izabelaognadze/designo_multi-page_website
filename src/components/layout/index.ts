@@ -3,6 +3,7 @@ export * from "./footer";
 export * from "./talk-about-section";
 export * from "./home-designs";
 export * from "./company-desc-sec";
+export * from "./home-main-content";
 export * from "../button-on-dark";
 export * from "../button-on-light";
 export * from "../design-section";
