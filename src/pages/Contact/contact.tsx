@@ -1,4 +1,10 @@
-import { Header, Footer, TalkAbout, Locations } from "../../components/layout";
+import {
+  Header,
+  Footer,
+  TalkAbout,
+  Locations,
+  ContactSection,
+} from "../../components/layout";
 import CanadaLogo from "../../assets/shared/Canada.svg";
 import AustraliaLogo from "../../assets/shared/Australia.svg";
 import UnitedKingdomLogo from "../../assets/shared/United-Kingdom.svg";
@@ -7,6 +13,7 @@ export const Contact = () => {
     <div className="">
       <body>
         <Header />
+        <ContactSection />
         <div className="flex flex-col lg:flex-row space-y-12 lg:items-start lg:my-[60px] max-w-[1111px] mx-auto">
           {/* samoci px shesacvlelia */}
           <Locations logo={CanadaLogo} header="Canada" />
