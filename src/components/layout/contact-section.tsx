@@ -24,22 +24,22 @@ export const ContactSection = () => {
           <input
             type="text"
             placeholder="Name"
-            className="bg-inherit placeholder:text-white border-b-[1px] border-b-white border-solid placeholder:opacity-60 border-opacity-60"
+            className="bg-inherit hover:border-b-[3px] hover:border-opacity-100 hover:placeholder:opacity-100 placeholder:text-white border-b-[1px] border-b-white border-solid placeholder:opacity-60 border-opacity-60"
             size={1}
           />
           <input
             type="email"
             placeholder="Email Address"
-            className="bg-inherit placeholder:text-white border-b-[1px] border-b-white border-solid placeholder:opacity-60 border-opacity-60"
+            className="bg-inherit hover:border-b-[3px] hover:border-opacity-100 hover:placeholder:opacity-100 placeholder:text-white border-b-[1px] border-b-white border-solid placeholder:opacity-60 border-opacity-60"
           />
           <input
             type="tel"
             placeholder="Phone"
-            className="bg-inherit placeholder:text-white border-b-[1px] border-b-white border-solid placeholder:opacity-60 border-opacity-60"
+            className="bg-inherit hover:border-b-[3px] hover:border-opacity-100 hover:placeholder:opacity-100 placeholder:text-white border-b-[1px] border-b-white border-solid placeholder:opacity-60 border-opacity-60"
           />
           <textarea
             placeholder="Your Message"
-            className="bg-inherit placeholder:text-white border-b-[1px] border-b-white border-solid placeholder:opacity-60 border-opacity-60 h-[102px] placeholder:text-"
+            className="bg-inherit hover:border-b-[3px] hover:border-opacity-100 hover:placeholder:opacity-100 placeholder:text-white border-b-[1px] border-b-white border-solid placeholder:opacity-60 border-opacity-60 h-[102px] placeholder:text-"
           ></textarea>
         </div>
         <div className="pb-[72px]">

@@ -220,7 +220,7 @@ export const LocationsMap = ({
 }: LocationsMapProps) => {
   return (
     <div
-      className="flex whitespace-nowrap md:text-start flex-col md:rounded-[15px] text-center justify-center font-normal space-y-6 bg-clrWhiteDark md:max-w-[689px] lg:max-w-none mx-auto md:w-auto md:px-[23%] lg:px-[15%] py-20 md:py-24 lg:py-0"
+      className="flex w-[100%] md:w-auto whitespace-nowrap md:text-start flex-col md:rounded-[15px] text-center justify-center font-normal space-y-6 bg-clrWhiteDark md:max-w-[689px] lg:max-w-none mx-auto md:w-auto md:px-[23%] lg:px-[15%] py-20 md:py-24 lg:py-0"
       style={{
         backgroundImage: `url(${AboutBgImg})`,
         backgroundRepeat: "space",
