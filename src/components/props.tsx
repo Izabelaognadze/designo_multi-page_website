@@ -121,7 +121,7 @@ export const AboutMainContent = ({
       <div
         style={{
           backgroundImage: `url(${AboutBgImg})`,
-          backgroundRepeat: "repeat",
+          backgroundRepeat: "space",
           backgroundSize: "350px 350px",
         }}
         className={`${bg_col} text-center px-[59px] lg:text-start space-y-6 lg:w-[62%] max-w-[689px] flex justify-center flex-col pb-16 `}
@@ -172,7 +172,7 @@ export const HomeDesign = ({
         alt=""
       />
       <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-        <h1 className="text-[40px] font-medium leading-10 tracking-[2px] truncate">
+        <h1 className="text-[40px] font-medium leading-10 tracking-[2px]">
           {header}
         </h1>
         <div className="flex flex-row mt-3 md:mt-6 ">
@@ -220,25 +220,27 @@ export const LocationsMap = ({
 }: LocationsMapProps) => {
   return (
     <div
-      className="flex flex-col md:rounded-[15px] text-center justify-center font-normal space-y-6 bg-clrWhiteDark md:max-w-[689px] lg:max-w-none mx-auto w-full md:w-auto md:px-[25%] lg:px-[23%]"
+      className="flex whitespace-nowrap md:text-start flex-col md:rounded-[15px] text-center justify-center font-normal space-y-6 bg-clrWhiteDark md:max-w-[689px] lg:max-w-none mx-auto md:w-auto md:px-[23%] lg:px-[15%] py-20 md:py-24 lg:py-0"
       style={{
         backgroundImage: `url(${AboutBgImg})`,
-        backgroundRepeat: "repeat",
+        backgroundRepeat: "space",
         backgroundSize: "350px 350px",
       }}
     >
       <h3 className="text-clrPinkDark font-medium text-4xl leading-9">
         {header}
       </h3>
-      <div className="flex flex-col">
-        <p className="font-medium">{label1}</p>
-        <p className="">{paragraph1}</p>
-        <p className="">{paragraph2}</p>
-      </div>
-      <div className="flex flex-col">
-        <p className="">{label2}</p>
-        <p className="">{paragraph3}</p>
-        <p className="">{paragraph4}</p>
+      <div className="flex flex-col md:flex-row md:space-x-6 ">
+        <div className="flex flex-col">
+          <p className="font-bold">{label1}</p>
+          <p className="">{paragraph1}</p>
+          <p className="">{paragraph2}</p>
+        </div>
+        <div className="flex flex-col">
+          <p className="font-bold">{label2}</p>
+          <p className="">{paragraph3}</p>
+          <p className="">{paragraph4}</p>
+        </div>
       </div>
     </div>
   );

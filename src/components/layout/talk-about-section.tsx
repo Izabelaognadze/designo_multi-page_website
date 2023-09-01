@@ -6,7 +6,7 @@ export const TalkAbout = () => {
       className="bg-clrPinkDark translate-y-[50%] md:translate-y-[25%] text-white mx-6 md:mx-[39px] max-w-[1111px] flex flex-col lg:flex-row lg:mx-auto rounded-2xl py-16 md:py-[57px] lg:py-[72px]"
       style={{
         backgroundImage: `url(${backgroImage})`,
-        backgroundRepeat: "repeat",
+        backgroundRepeat: "space",
         backgroundPositionY: "-50%",
       }}
     >

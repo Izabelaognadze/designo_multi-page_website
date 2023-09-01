@@ -16,9 +16,9 @@ export const Locations = () => {
   return (
     <div className="">
       <Header />
-      <div className="max-w-[1111px] mx-auto md:space-y-8">
-        <div className="flex flex-col lg:flex-row gap-8">
-          <picture className="mx-auto rounded-[15px] overflow-hidden">
+      <div className="max-w-[1111px] mx-auto space-y-8">
+        <div className="flex flex-col lg:flex-row md:gap-8">
+          <picture className="mx-auto md:rounded-[15px] overflow-hidden">
             <source media="(min-width: 1024px)" srcSet={canadaMapDesk} />
             <img src={canadaMapMob} alt="" />
           </picture>
@@ -32,8 +32,8 @@ export const Locations = () => {
             paragraph4="M : contact@designo.co"
           />
         </div>
-        <div className="flex flex-col lg:flex-row-reverse gap-8">
-          <picture className="mx-auto rounded-[15px] overflow-hidden">
+        <div className="flex flex-col lg:flex-row-reverse md:gap-8">
+          <picture className="mx-auto md:rounded-[15px] overflow-hidden">
             <source media="(min-width: 1024px)" srcSet={AustraliaMapDesk} />
             <img src={AustraliaMapMob} alt="" />
           </picture>
@@ -47,8 +47,8 @@ export const Locations = () => {
             paragraph4="M : contact@designo.au"
           />
         </div>
-        <div className="flex flex-col lg:flex-row gap-8">
-          <picture className="mx-auto rounded-[15px] overflow-hidden">
+        <div className="flex flex-col lg:flex-row md:gap-8">
+          <picture className="mx-auto md:rounded-[15px] overflow-hidden">
             <source media="(min-width: 1024px)" srcSet={ukMapDesk} />
             <img src={ukMapMob} alt="" />
           </picture>
