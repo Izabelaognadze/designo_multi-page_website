@@ -27,13 +27,13 @@ export const Footer = () => {
         </div>
         <hr className="hidden md:block h-[1px] opacity-10 mx-auto mt-[13px]" />
         <div className="flex flex-col md:flex-row items-center md:justify-between md:items-end">
-          <div className="flex flex-col items-end md:flex-row text-clrWhite font-normal opacity-50 mt-[31px] text-center md:text-start">
-            <div className="w-[223px] md:gap-[10px] lg:w-[350px] lg:gap-[30px] te">
+          <div className="flex gap-10 flex-col items-end md:flex-row text-clrWhite font-normal opacity-50 mt-[31px] text-center md:text-start">
+            <div className="w-[223px] gap-10 md:gap-[10px] lg:w-[350px] lg:gap-[30px] te">
               <p className="font-bold">Designo Central Office</p>
               <p>3886 Wellington Street</p>
               <p>Toronto, Ontario M9C 3J5</p>
             </div>
-            <div className="w-[223px]  md:gap-[10px] lg:w-[350px] lg:gap-[30px]">
+            <div className="w-[223px] md:gap-[10px] lg:w-[350px] lg:gap-[30px]">
               <p className="font-bold">Contact Us (Central Office)</p>
               <p>P : +1 253-863-8967</p>
               <p>M : contact@designo.co</p>
