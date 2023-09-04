@@ -112,12 +112,12 @@ export const AboutMainContent = ({
 }: AboutMainContentProps) => {
   return (
     <div
-      className={`flex flex-col mx-10 max-w-[1111px] ${display} rounded-[15px] overflow-hidden`}
+      className={`flex flex-col md:mx-10 max-w-[1111px] ${display} md:rounded-[15px] overflow-hidden`}
     >
-      <div className="lg:w-[38%]">
-        <img className="block lg:hidden" src={img_mob} alt="" />
-        <img className="hidden lg:block" src={img_des} alt="" />
-      </div>
+      <picture className="lg:w-[38%]">
+        <source srcSet={img_des} media="(min-width: 1024px)" />
+        <img src={img_mob} alt="" />
+      </picture>
       <div
         style={{
           backgroundImage: `url(${AboutBgImg})`,
@@ -242,6 +242,29 @@ export const LocationsMap = ({
           <p className="">{paragraph4}</p>
         </div>
       </div>
+    </div>
+  );
+};
+
+export const ErrorMsg = () => {
+  return (
+    <div className="flex items-center text-center space-x-[9px]">
+      <p className="text-white text-xs leading-7">Can&apos;t be empty</p>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <circle cx="10" cy="10" r="10" fill="white" />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M11 5H9V12H11V5ZM11 14H9V16H11V14Z"
+          fill="#E7816B"
+        />
+      </svg>
     </div>
   );
 };

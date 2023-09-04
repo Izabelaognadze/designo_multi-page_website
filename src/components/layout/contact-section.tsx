@@ -1,4 +1,5 @@
 import { ButtonDark } from ".";
+import { ErrorMsg } from ".";
 import bgImg from "../../assets/contact/desktop/bg-pattern-hero-desktop.svg";
 
 export const ContactSection = () => {
@@ -18,12 +19,23 @@ export const ContactSection = () => {
           looking for unique digital experiences that&apos;s relatable to your
           users, drop us a line.
         </p>
+        <ErrorMsg />
       </div>
       <div className="items-center md:items-end flex flex-col lg:w-[50%]">
         <div className="space-y-6 mb-10 flex flex-col lg:pt-[55px] w-full">
+          {/* <p
+            data-errormsg="name"
+            className="opacity-0 relative z-0 text-red-500 text-xs transform translate-y-8 text-right transition-opacity duration-500"
+          >
+            Can&apos;t be empty
+          </p>
+          <label className="hidden" for="name">
+            name
+          </label> */}
           <input
             type="text"
             placeholder="Name"
+            data-formfield="name"
             className="bg-inherit hover:border-b-[3px] hover:border-opacity-100 hover:placeholder:opacity-100 placeholder:text-white border-b-[1px] border-b-white border-solid placeholder:opacity-60 border-opacity-60"
             size={1}
           />

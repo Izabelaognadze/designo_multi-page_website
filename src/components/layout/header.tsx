@@ -10,7 +10,7 @@ export const Header = () => {
   };
   return (
     <div className="max-w-[689px] md:max-w-[1111px] mx-auto">
-      <div className="flex flex-row justify-between md:mt-[64px] md:mx-10 lg:mx-0 my-9">
+      <div className="flex flex-row justify-between md:mt-[64px] mx-6 md:mx-10 lg:mx-0 my-9">
         <div className="w-[202px]">
           <Link to="/">
             <img src={logoLight} alt="" />
