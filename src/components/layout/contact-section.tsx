@@ -1,5 +1,5 @@
 import { ButtonDark } from ".";
-import { ErrorMsg } from ".";
+// import { ErrorMsg } from ".";
 import bgImg from "../../assets/contact/desktop/bg-pattern-hero-desktop.svg";
 
 export const ContactSection = () => {
@@ -19,7 +19,7 @@ export const ContactSection = () => {
           looking for unique digital experiences that&apos;s relatable to your
           users, drop us a line.
         </p>
-        <ErrorMsg />
+        {/* <ErrorMsg /> */}
       </div>
       <div className="items-center md:items-end flex flex-col lg:w-[50%]">
         <div className="space-y-6 mb-10 flex flex-col lg:pt-[55px] w-full">

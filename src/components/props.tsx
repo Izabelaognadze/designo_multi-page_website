@@ -54,15 +54,15 @@ export const DesignMainContent = ({
   label,
 }: CompanyDesctiptionProps) => {
   return (
-    <div className="flex flex-col md:flex-row lg:flex-col cursor-pointer  rounded-[15px] overflow-hidden group">
+    <div className="flex flex-col md:flex-row lg:flex-col cursor-pointer rounded-[15px] overflow-hidden group">
       <div className="max-w-xs group-hover:bg-clrPinkDark">
         <img src={logo} alt="" />
       </div>
-      <div className="bg-clrWhiteDark text-center group-hover:bg-clrPinkDark group max-w-xs flex flex-col justify-center ">
+      <div className="bg-clrWhiteDark text-center group-hover:bg-clrPinkDark group max-w-xs flex flex-col justify-center">
         <h1 className="text-clrPinkDark group-hover:text-white font-medium text-xl leading-[26px] tracking-[5px] mb-4 mt-5">
           {header}
         </h1>
-        <p className="group-hover:text-white text-clrBlackDark font-normal text-base leading-[26px] pb-8">
+        <p className="group-hover:text-white text-clrBlackDark font-normal text-base leading-[26px] pb-8 min-h-[84px]">
           {label}
         </p>
       </div>
