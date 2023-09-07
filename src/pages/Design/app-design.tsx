@@ -30,6 +30,47 @@ export const AppDesign = () => {
         label="App Design"
         paragraph="Our mobile designs bring intuitive digital solutions to your customers right at their fingertips."
       />
+      {/* <table className="max-w-[1111px] mx-auto w-[100%]">
+        <tr className="">
+          <th>
+            <DesignMainContent
+              logo={AirfilterLogo}
+              header="AIRFILTER"
+              label="Solving the problem of poor indoor air quality by filtering the air"
+            />
+          </th>
+          <th className="self-center">
+            <DesignMainContent
+              logo={eyecamLogo}
+              header="EYECAM"
+              label="Product that lets you edit your favorite photos and videos at any time"
+            />
+          </th>
+          <th>
+            <DesignMainContent
+              logo={faceitLogo}
+              header="FACEIT"
+              label="Get to meet your favorite internet superstar with the faceit app"
+            />
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <DesignMainContent
+              logo={todoLogo}
+              header="TODO"
+              label="A todo app that features cloud sync with light and dark mode"
+            />
+          </th>
+          <th>
+            <DesignMainContent
+              logo={loopstudiosLogo}
+              header="LOOPSTUDIOS"
+              label="A VR experience app made for Loopstudios"
+            />
+          </th>
+        </tr>
+      </table> */}
       <div className="mt-[97px] space-y-10 lg:space-y-0 lg:gap-y-10 mx-auto max-w-[1111px] flex flex-col items-center lg:grid  lg:grid-cols-3">
         <DesignMainContent
           logo={AirfilterLogo}
@@ -56,6 +97,7 @@ export const AppDesign = () => {
           header="LOOPSTUDIOS"
           label="A VR experience app made for Loopstudios"
         />
+        <div className="lg:w-[320px]"></div>
       </div>
       <div className="text-white uppercase flex flex-col lg:flex-row gap-6 lg:gap-[30px] max-w-[1111px] mx-auto mt-[96px] md:mt-[120px] lg:mt-40">
         <Link to="/webDesign">
