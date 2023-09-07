@@ -36,7 +36,7 @@ interface DesignHeaderProps {
 export const DesignHeader = ({ label, paragraph }: DesignHeaderProps) => {
   return (
     <div
-      className="text-white flex flex-col bg-clrPinkDark text-center rounded-2xl py-[105px] md:py-16 max-w-[1111px] mx-auto space-y-6 px-6"
+      className="text-white flex flex-col bg-clrPinkDark text-center md:rounded-2xl md:mx-[39px]  py-[105px] md:py-16 max-w-[1111px] lg:mx-auto space-y-6 px-6"
       style={{
         backgroundImage: `url(${BackgroundImg})`,
         backgroundPositionX: "-120%",
